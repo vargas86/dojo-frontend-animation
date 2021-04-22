@@ -1,0 +1,176 @@
+@import '../mixins.scss';
+
+.bg-darker {
+    background-color: $darkness;
+}  
+
+h2.section-title {
+font-family: 'Montserrat' !important;
+font-size: 19px;
+font-weight: 400;
+letter-spacing: 1px;
+color: $light-gray !important;
+}
+
+
+.none-margin {
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+.scrollwrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    .scrollchildren {
+        flex: 0 0 auto;
+    }
+}
+
+.card {
+    background-color: transparent !important;
+    .card-index &, 
+    .teacher-index & { 
+        @include bg-darkness;
+    }
+}
+a {
+    text-decoration: none !important;
+    &:hover {
+        text-decoration: none !important;
+        @include link-hover;
+    }
+        h2.card-title {
+            @include card-title-h2;
+            .card-index &, .teacher-index & {}
+                &:hover { 
+                    @include link-hover; 
+                }
+        }
+}
+
+.cover {
+    max-width: 250px;
+    max-height: 333px;
+    @include card-radius;
+    &:hover {
+        @include card-radius-hover;
+    }
+}
+
+.avatar { 
+    .icon-play {
+        img { 
+            width:80%;
+            max-width: 50px;
+            } 
+        .avatarrounded {
+            border-radius: 25px;
+            border: 1px solid white;
+            padding: 2px;
+            box-shadow: 1px 2px 15px #616161;
+        }
+
+        }
+    .suscribe-channel { 
+        .suscribe {
+            @include link-size;
+            &:hover {
+                @include link-hover; 
+            }  
+        }  
+
+    }
+}
+
+.cat-subtitle { 
+    font-size: 12px !important;
+    @include link-size;
+    @include link-hover; 
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    display: none!important;
+}     
+
+.sticker {
+    z-index: 5;
+    position: sticky;
+}
+
+.fixer {
+    z-index: 5;
+    position: fixed;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100vw;
+    /*height: 90vh;*/
+    height: 80vh;
+}
+   
+   .fadedfx {
+    background-color: #fe5652;
+    visibility: hidden;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 3.5s;
+    -webkit-animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
+
+@media (min-width: 576px) { 
+}
+
+@media (min-width: 768px) {
+}
+
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 100vh;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1400px) {
+
+}
+

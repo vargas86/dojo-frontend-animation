@@ -1,0 +1,148 @@
+$gloom:#000000e0;
+$darkness:#0D0D0D;
+$dark:#181426;
+$gray:#4D4A59;
+$light-gray:#89888C;
+$light:#F2F2F2;
+$light-blue:#0389a6;
+$blue:#022859;
+$dark-blue:#0F0926;
+
+//Only for HOVER SHADOW
+$shine: #ffffff14;
+
+.bg-gloom {
+   background-color: $gloom;
+}
+
+@mixin light {
+    background-color: $light;
+    color:$dark-blue;
+ }
+
+ @mixin dark {
+    background-color: $dark;
+    color:$light;
+ }
+
+ @mixin light-blue {
+    background-color: $light-blue !important;
+    color:$light;
+ }
+
+ @mixin blue {
+    background-color: $blue !important;
+    color:$light !important;
+ }
+
+ @mixin card-radius {
+   border-radius: 25px !important;
+   box-shadow: 1px 0px 5px $darkness;
+}
+
+@mixin card-radius-hover {
+   box-shadow: 0px 4px 8px $shine;
+}
+
+@mixin card-title-h2 {
+   font-family: 'Montserrat', sans-serif !important;
+   font-size: 17px;
+   font-weight: 400;
+   margin-top: 13px;
+}
+
+@mixin bg-darkness {
+   background-color: $darkness;
+}
+
+@mixin link-size {
+   font-size: 14px;
+}
+
+@mixin link-hover {
+   color:$light-blue !important;
+}
+
+.switch-light-dark {
+   color: $darkness;
+}
+
+
+ .blue-btn { 
+    @include blue;
+    padding:5px 15px !important;
+    & :hover {
+      @include light-blue;
+    }
+}
+
+.light-btn { 
+   @include light;
+   padding:5px 15px !important;
+   & :hover {
+     @include light-blue;
+   }
+}
+
+@mixin paralax-effect {
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+@mixin paralax-heigth {
+   height: 600px;
+  }
+
+.paralax {
+      &-one, &-two, &-three, &password, &auth  {
+         @include paralax-effect;
+      }
+      &-two , &-three {
+         @include paralax-heigth;
+      }
+      &-one { background-image: none; background-color:$darkness; }
+      &-two { background-image: none; background-color:$darkness; }
+      &-three { background-image: none; background-color: #F2F2F2; }
+      &password { background-image: none; background-color: #F2F2F2; } 
+      &auth { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/mobile-bg-2.jpg?v=1618891362"); background-color: #F2F2F2;}   
+   }
+
+
+
+
+   
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+   .paralax {
+
+      &-one { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/bg-dojo.jpg?v=1617984034"); }
+      &-two { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/row4.jpg?v=1618431300"); }
+      &-three { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/row3.jpg?v=1618431103"); }
+      &password { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/forget.jpg?v=1618601803");} 
+      &auth { background-image: url("https://cdn.shopify.com/s/files/1/0461/4861/6346/files/row4.jpg?v=1618431300");}   
+   }
+
+   .switch-light-dark {
+      color: $light;
+   }
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+     

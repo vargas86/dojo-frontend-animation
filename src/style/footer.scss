@@ -1,0 +1,49 @@
+.bg-foo-dark {
+    background-color:$darkness;
+}
+
+img.logo {
+    width: 80%;
+    max-width: 100px;
+}
+
+
+.svg-light {
+    --userLogoColor: #F2F2F2;
+}
+
+ul.navfooter li {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 12px;
+}
+
+ul.colfooter li {
+    display: table-footer-group;
+}
+
+.btn-newsletter {
+    @include blue;
+    border-radius: 25px !important;
+    padding:5px 15px !important;
+    &:hover {
+        @include light-blue;
+      }
+}
+
+.newsletter {
+    border-radius: 25px !important;
+
+}
+
+.slogan {
+    h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}

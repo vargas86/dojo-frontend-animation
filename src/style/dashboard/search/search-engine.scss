@@ -1,0 +1,67 @@
+.search-engine-input {
+    height: 100%;
+
+    form label {
+        height: 100%;
+        margin: 0;
+
+        input {
+            cursor: pointer;
+            border: none;
+            height: 42px;
+            border-radius: 12px;
+            // width: 200;
+            &:focus{
+                border: none;
+                border-radius: 12px;
+                outline: none;
+                padding-left: 10px;
+            }
+        }
+        
+    }
+
+}
+
+#search-input{
+    height: 100%;
+
+    form label {
+        height: 100%;
+        margin: 0;
+
+        input {
+            border: none;
+            height: 42px;
+            border-radius: 12px;
+            width: 42px;
+
+            &:focus{
+                border: none;
+                border-radius: 12px;
+                outline: none;
+                padding-left: 10px;
+                width: 242px;
+            }
+            
+        }
+
+        // svg {
+        //     transform: translateX(-30px);
+        // }
+
+    }
+}
+
+.search-icon {
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.input-search {
+    background-image: src('../../../assets/icons/ICON_Dojo__search.svg');
+}
+

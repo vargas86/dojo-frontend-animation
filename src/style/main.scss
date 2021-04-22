@@ -1,0 +1,30 @@
+@import './mixins.scss';
+@import './general.scss';
+
+// Header
+@import './header/header.scss';
+
+// Navigation
+@import './navigation/navbar.scss';
+@import './navigation/mobile-navbar.scss';
+
+// Auth
+@import './auth/auth.scss';
+
+// Home
+@import './home/home.scss';
+@import './classroom.scss';
+@import './footer.scss';
+
+// Dashboard
+@import './dashboard/dashboard.scss';
+@import './dashboard/forms.scss';
+
+// Panels
+@import './dashboard/panels/suscriptions.scss';
+@import './dashboard/panels/ownChannel.scss';
+@import './dashboard/panels/personalInfo.scss';
+@import './dashboard/panels/updateInfo.scss';
+
+//Search Engine
+@import './dashboard/search/search-engine.scss';

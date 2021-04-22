@@ -1,0 +1,179 @@
+.channel-wrapper {
+    border-radius: 25px;
+    height: 100%;
+    h4 {
+        display: contents;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-shadow: #fff 0px 4px 26px;
+    }
+}
+
+.channel-panel-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.channel-set {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    column-gap: 44px;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 16px;
+    box-shadow: rgba(255,255,255, .4) 0px 0px -14px -40px, inset rgba(255,255,255, .2) -35px 7px 39px -61px ;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .channel {
+        flex: 0 0 auto;
+        width: 158px;
+        height: 137px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        box-shadow: 0px 4px 71px -42px #FFFFFF, inset -166px 619px 250px -492px #FFFFFF;
+        
+        cursor: pointer;
+        h2{
+            padding: 24px 24px 0px 24px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+.lesson-set {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    column-gap: 44px;
+    box-shadow: rgba(255,255,255, .4) 0px 0px -14px -40px, inset rgba(255,255,255, .2) -35px 7px 39px -61px ;
+    border-radius: 0px 0px 25px 25px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .lesson {
+        flex: 0 0 auto;
+
+        width: 158px;
+        height: 137px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        box-shadow: 0px 4px 71px -42px #FFFFFF, inset -166px 619px 250px -492px #FFFFFF;
+        cursor: pointer;
+        h2{
+            padding: 24px 24px 0px 24px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media ( min-width: 992px) {
+    .channel-wrapper {
+        border-radius: 25px;
+        height: 100%;
+        h4 {
+            display: contents;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-shadow: #fff 0px 4px 26px;
+        }
+    }
+
+    .profile-channel-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .channel-profile-wrapper {
+
+    }
+
+    .channel-panel-wrapper {
+        row-gap: 10px;
+    }
+
+    .channel-set {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        column-gap: 44px;
+        border-radius: 25px 25px 0px 0px;
+        margin-top: 16px;
+        box-shadow: rgba(255,255,255, .4) 0px 0px -14px -40px, inset rgba(255,255,255, .2) -35px 7px 39px -61px ;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .channel {
+            flex: 0 0 auto;
+            width: 158px;
+            height: 137px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            box-shadow: 0px 4px 71px -42px #FFFFFF, inset -166px 619px 250px -492px #FFFFFF;
+            
+            cursor: pointer;
+            h2{
+                padding: 24px 24px 0px 24px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .lesson-set {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        column-gap: 44px;
+        box-shadow: rgba(255,255,255, .4) 0px 0px -14px -40px, inset rgba(255,255,255, .2) -35px 7px 39px -61px ;
+        border-radius: 0px 0px 25px 25px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .lesson {
+            flex: 0 0 auto;
+
+            width: 158px;
+            height: 137px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            box-shadow: 0px 4px 71px -42px #FFFFFF, inset -166px 619px 250px -492px #FFFFFF;
+            cursor: pointer;
+            h2{
+                padding: 24px 24px 0px 24px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}

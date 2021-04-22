@@ -1,0 +1,78 @@
+
+    .dashboard-form {
+        height: 300px;
+        background-color: #fff ;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 59px -15px #FFFFFF ,inset rgba(0, 0, 0, .5) 0px -4px 19px -5px;
+        max-width: 1000px;
+        margin-top: 16px;
+    }
+    
+    .dashboard-form-btn-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    
+    .dashboard-form-btn-wrapper button {
+        color: #fff;
+        border: none;
+        height: 45px;
+        width: 85%;
+        background: #091626;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+
+@media ( min-width: 992px) {
+
+    .dashboard-form {
+        height: 59%;
+        background-color: #fff ;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 59px -15px #FFFFFF ,inset rgba(0, 0, 0, .5) 0px -4px 19px -5px;
+        max-width: 1000px;
+        margin-top: 16px;
+    }
+    
+    .dashboard-form-btn-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    
+    .dashboard-form-btn-wrapper button {
+        color: #fff;
+        border: none;
+        height: 45px;
+        width: 85%;
+        background: #091626;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .update-info-form{
+        height: 89%;
+        width: 100%;
+    }
+
+}
